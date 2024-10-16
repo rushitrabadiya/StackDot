@@ -108,6 +108,7 @@ exports.createSection = async (req, res) => {
         message: "Section name is required",
       });
     }
+    
 
     const [result] = await connection.execute(
       "INSERT INTO Section (section_name, medium_id) VALUES (?, ?)",
