@@ -1,0 +1,931 @@
+{
+	"info": {
+		"_postman_id": "7ed991ed-62ad-4dc1-8780-5254313e37c1",
+		"name": "Stack-Dot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33483080"
+	},
+	"item": [
+		{
+			"name": "boards",
+			"item": [
+				{
+					"name": "Add board",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"board_name\": \"CBSE\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/institute/2/boards",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"institute",
+								"2",
+								"boards"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All boards",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/institute/2/boards",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"institute",
+								"2",
+								"boards"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get one board",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/institute/2/boards/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"institute",
+								"2",
+								"boards",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete board",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/institute/2/boards/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"institute",
+								"2",
+								"boards",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update board",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"board_name\": \"Software Engineering\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/institute/2/boards/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"institute",
+								"2",
+								"boards",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "medium",
+			"item": [
+				{
+					"name": "Add Medium",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"medium_name\": \"Gujarati Medium\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/institute/2/boards/5/mediums/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"institute",
+								"2",
+								"boards",
+								"5",
+								"mediums",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Medium",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/institute/2/boards/5/mediums/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"institute",
+								"2",
+								"boards",
+								"5",
+								"mediums",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get one medium",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/institute/2/boards/5/mediums/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"institute",
+								"2",
+								"boards",
+								"5",
+								"mediums",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update Medium",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"medium_name\": \"Spanish Medium\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/institute/2/boards/5/mediums/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"institute",
+								"2",
+								"boards",
+								"5",
+								"mediums",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Medium",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/institute/2/boards/5/mediums/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"institute",
+								"2",
+								"boards",
+								"5",
+								"mediums",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SECTION",
+			"item": [
+				{
+					"name": "Get one section",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/institute/2/boards/5/mediums/2/sections/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"institute",
+								"2",
+								"boards",
+								"5",
+								"mediums",
+								"2",
+								"sections",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all section",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/institute/2/boards/5/mediums/2/sections",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"institute",
+								"2",
+								"boards",
+								"5",
+								"mediums",
+								"2",
+								"sections"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add section",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/institute/1/boards/1/mediums/1/sections",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"institute",
+								"1",
+								"boards",
+								"1",
+								"mediums",
+								"1",
+								"sections"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update section",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/institute/1/boards/1/mediums/1/sections/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"institute",
+								"1",
+								"boards",
+								"1",
+								"mediums",
+								"1",
+								"sections",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete section",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/institute/2/boards/5/mediums/2/sections/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"institute",
+								"2",
+								"boards",
+								"5",
+								"mediums",
+								"2",
+								"sections",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "STD",
+			"item": [
+				{
+					"name": "Get all std",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/institute/2/boards/5/mediums/3/sections/3/standards",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"institute",
+								"2",
+								"boards",
+								"5",
+								"mediums",
+								"3",
+								"sections",
+								"3",
+								"standards"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get one std",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/institute/2/boards/5/mediums/3/sections/3/standards/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"institute",
+								"2",
+								"boards",
+								"5",
+								"mediums",
+								"3",
+								"sections",
+								"3",
+								"standards",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ADD std",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"standard_name\": \"std 10\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/institute/2/boards/5/mediums/3/sections/3/standards",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"institute",
+								"2",
+								"boards",
+								"5",
+								"mediums",
+								"3",
+								"sections",
+								"3",
+								"standards"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update std",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/institute/1/boards/2/mediums/3/sections/4/standards",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"institute",
+								"1",
+								"boards",
+								"2",
+								"mediums",
+								"3",
+								"sections",
+								"4",
+								"standards"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete std",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/institute/2/boards/5/mediums/3/sections/3/standards/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"institute",
+								"2",
+								"boards",
+								"5",
+								"mediums",
+								"3",
+								"sections",
+								"3",
+								"standards",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Subject",
+			"item": [
+				{
+					"name": "Add subject",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"subject_name\": \"Mathematics\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/institute/2/boards/5/mediums/3/sections/3/standards/1/subjects",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"institute",
+								"2",
+								"boards",
+								"5",
+								"mediums",
+								"3",
+								"sections",
+								"3",
+								"standards",
+								"1",
+								"subjects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Subject",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/institute/2/boards/5/mediums/3/sections/3/standards/1/subjects/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"institute",
+								"2",
+								"boards",
+								"5",
+								"mediums",
+								"3",
+								"sections",
+								"3",
+								"standards",
+								"1",
+								"subjects",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all subject",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/institute/2/boards/5/mediums/3/sections/3/standards/1/subjects",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"institute",
+								"2",
+								"boards",
+								"5",
+								"mediums",
+								"3",
+								"sections",
+								"3",
+								"standards",
+								"1",
+								"subjects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update subject",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"subject_name\": \"S S\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/institute/2/boards/5/mediums/3/sections/3/standards/1/subjects/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"institute",
+								"2",
+								"boards",
+								"5",
+								"mediums",
+								"3",
+								"sections",
+								"3",
+								"standards",
+								"1",
+								"subjects",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete subject",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/institute/2/boards/5/mediums/3/sections/3/standards/1/subjects/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"institute",
+								"2",
+								"boards",
+								"5",
+								"mediums",
+								"3",
+								"sections",
+								"3",
+								"standards",
+								"1",
+								"subjects",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "institute",
+			"item": [
+				{
+					"name": "Add institute",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"institute_type\": \"School\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/institute/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"institute",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all institute",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/institute/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"institute",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get institute",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/institute/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"institute",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update institute",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"institute_type\": \"School\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/institute/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"institute",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete institute",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/institute/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"institute",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
